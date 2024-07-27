@@ -7,6 +7,8 @@ from util import RagOpr
 ragOprRef = RagOpr()
 st.set_page_config(page_title="iris-RAG-Gen")
 
+def refresh_page():
+    st.markdown('<meta http-equiv="refresh" content="0">', unsafe_allow_html=True)
 
 def display_messages():    
     for i, (msg, is_user) in enumerate(st.session_state["messages"]):
@@ -60,12 +62,12 @@ def ingestDoc():
             st.session_state["messages"].append(
                 ("Error while Ingesting Document", False)
             )
-
+        
+        refresh_page()
 def page():
     if len(st.session_state) == 0:
         st.session_state["messages"] = []
-        #_service.clear()
-    
+       
     st.header("iris-RAG-Gen Application")
 
     st.sidebar.markdown(
