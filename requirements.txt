@@ -1,0 +1,11 @@
+sqlalchemy-iris
+langchain
+langchain-iris
+langchain-openai
+streamlit
+streamlit-chat
+openai
+pypdf
+pytest
+chromadb
+fastembed
