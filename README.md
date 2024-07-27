@@ -3,7 +3,7 @@ Iris-RAG-Gen is a generative AI Retrieval-Augmented Generation (RAG) application
 RAG is a powerful AI model that combines the strengths of retrieval-based and generative models. It leverages a pre-trained language model to generate responses based on retrieved documents, enabling more accurate and context-aware answers.
 
 [![one](https://img.shields.io/badge/Platform-InterSystems%20IRIS-blue)](https://www.intersystems.com/data-platform/) [![one](https://img.shields.io/badge/LLM-GPT%203-Purple)](https://openai.com/index/gpt-3-apps/) [![one](https://img.shields.io/badge/Framework-Langchain-teal)](https://www.langchain.com/) [![one](https://img.shields.io/badge/WebFrameWork-Streamlit-Orange)](https://streamlit.io/) [![one](https://img.shields.io/badge/VectorStore-IRIS-blue)](https://www.intersystems.com/data-platform/) [![one](https://img.shields.io/badge/ORM-SQLAlchemy-teal)](https://www.sqlalchemy.org/)  [![one](https://img.shields.io/badge/OpenAI-ChatGPT-yellow)](https://openai.com/) [![OEX](https://img.shields.io/badge/Available%20on-Intersystems%20Open%20Exchange-00b2a9.svg)](https://github.com/mwaseem75/iris-RAG-Gen/blob/main/LICENSE) [![license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mwaseem75/iris-RAG-Gen/blob/main/LICENSE)
-<img width="898" alt="image" src="https://github.com/user-attachments/assets/21144037-23eb-454f-a90a-e274f34cd909">
+<img width="825" alt="image" src="https://github.com/user-attachments/assets/1b108ff9-351e-441f-ac9b-b1533904cfc4">
 
 
 
