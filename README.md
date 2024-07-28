@@ -43,12 +43,23 @@ To run the application Navigate to [**http://localhost:8051**](http://localhost:
 Click on the Ingest Document button to Store [Embedded Python](https://docs.intersystems.com/iris20231/csp/docbook/DocBook.UI.Page.cls?KEY=GEPYTHON) PDF Document 
 <img width="955" alt="image" src="https://github.com/user-attachments/assets/d4c704b3-f5f9-427b-b87b-5770eb97d9a8">
 
+The application will read the document from the repository, convert it to vectors, and store it in the SQLUser.rag_document table. 
+
 Navigate to the Management Portal SQL [(http://localhost:53795/csp/sys/exp/%25CSP.UI.Portal.SQL.Home.zen?$NAMESPACE=USER)](http://localhost:53795/csp/sys/exp/%25CSP.UI.Portal.SQL.Home.zen?$NAMESPACE=USER) to view Vector Data [SuperUser | SYS]
+
+Type below SQL command to retrieve top 5 records
+```
+SELECT top 5
+id, embedding, document, metadata
+FROM SQLUser.rag_document
+```
 <img width="947" alt="image" src="https://github.com/user-attachments/assets/ab35e8a9-9582-42a7-8e8c-4c8f2dd55b5a">
 
-Once ingested, the application is ready to chat with the document. 
+Once ingested, the application is ready to chat with the document.
+
+Select the Embedded Python document option, enter the question, and press enter. The application will read the vector data and return the relevant answer.  
 <img width="956" alt="image" src="https://github.com/user-attachments/assets/db8c144c-3c35-4521-bca6-e9910b7cbc81">
 
-Click OpenAI radio button for OpenAI Chat
+Select OpenAI option for OpenAI Chat
 <img width="953" alt="image" src="https://github.com/user-attachments/assets/8a4edf79-de3b-455c-b186-7cf1687ae977">
 
