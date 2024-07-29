@@ -6,6 +6,3 @@ streamlit
 streamlit-chat
 openai
 pypdf
-pytest
-chromadb
-fastembed
