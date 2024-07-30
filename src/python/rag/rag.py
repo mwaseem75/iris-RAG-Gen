@@ -75,7 +75,7 @@ class RagOpr:
                         result = conn.execute(sql) 
                     except Exception as err:
                         print("An exception occurred:", err)                
-                    return ''
+                        return ''
        
         #Insert description value 
         with self.engine.connect() as conn:
@@ -112,7 +112,7 @@ class RagOpr:
         elif fileType == "application/pdf":
             loader = PyPDFLoader(filePath)       
         
-        print(loader)
+       
         documents = loader.load()        
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=400, chunk_overlap=0)
         
@@ -120,7 +120,7 @@ class RagOpr:
         texts = text_splitter.split_documents(documents)
         
         COLLECTION_NAME = self.get_collection_name(fileDesc,fileType)
-
+       
         #COLLECTION_NAME = "rag_document"
         db = IRISVector.from_documents(
             embedding=embeddings,
