@@ -42,26 +42,50 @@ Application requires OpenAI API Key, sign up for OpenAI API on [this page](https
 ## Run Streamlit Web Application
 To run the application Navigate to [**http://localhost:8051**](http://localhost:8051) 
 
-Click on the Ingest Document button to Store [Embedded Python](https://docs.intersystems.com/iris20231/csp/docbook/DocBook.UI.Page.cls?KEY=GEPYTHON) PDF Document 
-<img width="955" alt="image" src="https://github.com/user-attachments/assets/d4c704b3-f5f9-427b-b87b-5770eb97d9a8">
+Follow the Below Steps to Ingest the document:
+* Enter OpenAI Key
+* Select Document (PDF or TXT)
+* Enter Document Description
+* Click on the Ingest Document Button
 
-The application will read the document from the repository, convert it to vectors, and store it in the SQLUser.rag_document table. 
+![image](https://github.com/user-attachments/assets/4a1ca5b2-8eb3-432d-ace9-4e7374ee768d)
 
+Once the Document is Ingested, Select the document from 'Select Chat Option'
+![image](https://github.com/user-attachments/assets/d616c313-97cd-4313-aade-5f9ac80572b3)
+
+Select the Document and press enter. The application will read the vector data and return the relevant answer
+![image](https://github.com/user-attachments/assets/522b9381-bbed-4ffb-b729-61e967384c04)
+  
+To delete the Ingested document, Press the 'Delete selected Document' Button, Once confirmed, the Document will be deleted.
+![image](https://github.com/user-attachments/assets/d56585f9-3d5f-4b85-a473-10a28046bc8f)
+
+
+## View Data
 Navigate to the Management Portal SQL [(http://localhost:53795/csp/sys/exp/%25CSP.UI.Portal.SQL.Home.zen?$NAMESPACE=USER)](http://localhost:53795/csp/sys/exp/%25CSP.UI.Portal.SQL.Home.zen?$NAMESPACE=USER) to view Vector Data [SuperUser | SYS]
 
-Type below SQL command to retrieve top 5 records
+Documents Description is saved in the 'rag_documents' table.
+Type the below SQL command to retrieve the data
+```
+SELECT 
+id, description, docType
+FROM SQLUser.rag_documents
+```
+![image](https://github.com/user-attachments/assets/6c5c9b02-72aa-4348-9abe-694a3141e344)
+
+The vector data is saved in 'rag_document<id>' (id of the rag_documents)
+![image](https://github.com/user-attachments/assets/0ff66ce7-b48e-4b68-a24a-7233710a12e0)
+
+
+Type the below SQL command to retrieve vector data
 ```
 SELECT top 5
 id, embedding, document, metadata
-FROM SQLUser.rag_document
+FROM SQLUser.rag_document2
 ```
-<img width="947" alt="image" src="https://github.com/user-attachments/assets/ab35e8a9-9582-42a7-8e8c-4c8f2dd55b5a">
+![image](https://github.com/user-attachments/assets/950f9e04-6acf-4673-bff1-0d7d0965c8a8)
 
-Once ingested, the application is ready to chat with the document.
 
-Select the Embedded Python document option, enter the question, and press enter. The application will read the vector data and return the relevant answer.  
-<img width="956" alt="image" src="https://github.com/user-attachments/assets/db8c144c-3c35-4521-bca6-e9910b7cbc81">
+For OpenAI Chat, Select OpenAI option from 'Select Chat Option'
+![image](https://github.com/user-attachments/assets/d598e6bc-8ebb-469a-82a5-e26c4d3bd35a)
 
-Select OpenAI option for OpenAI Chat
-<img width="953" alt="image" src="https://github.com/user-attachments/assets/8a4edf79-de3b-455c-b186-7cf1687ae977">
 
