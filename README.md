@@ -6,11 +6,13 @@ RAG is a powerful AI model that combines the strengths of retrieval-based and ge
 [![one](https://img.shields.io/badge/Platform-InterSystems%20IRIS-blue)](https://www.intersystems.com/data-platform/) [![one](https://img.shields.io/badge/LLM-GPT%203-Purple)](https://openai.com/index/gpt-3-apps/) [![one](https://img.shields.io/badge/Framework-Langchain-teal)](https://www.langchain.com/) [![one](https://img.shields.io/badge/WebFrameWork-Streamlit-Orange)](https://streamlit.io/) [![one](https://img.shields.io/badge/VectorStore-IRIS-blue)](https://www.intersystems.com/data-platform/) [![one](https://img.shields.io/badge/ORM-SQLAlchemy-teal)](https://www.sqlalchemy.org/)  [![one](https://img.shields.io/badge/OpenAI-ChatGPT-yellow)](https://openai.com/) [![OEX](https://img.shields.io/badge/Available%20on-Intersystems%20Open%20Exchange-00b2a9.svg)](https://github.com/mwaseem75/iris-RAG-Gen/blob/main/LICENSE) [![license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mwaseem75/iris-RAG-Gen/blob/main/LICENSE)
 <img width="910" alt="image" src="https://github.com/user-attachments/assets/9882a6c3-f66a-4330-8f4f-1d3ebc77f349">
 
-
+# Application Interface
+![image](https://github.com/user-attachments/assets/486b1a90-5b5c-4d6a-8da4-b184dcf87e1e)
 
 # Features
-* Ingest Vector Data in IRIS
-* Personalize ChatGPT
+* Ingest Documents (PDF or TXT) into IRIS
+* Chat with the selected Ingested document 
+* Delete Ingested Documents
 * OpenAI ChatGPT
 
 # Installation
