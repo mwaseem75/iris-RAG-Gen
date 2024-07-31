@@ -3,7 +3,7 @@
   <Document name="iris-rag-gen.ZPM">
     <Module>
       <Name>iris-rag-gen</Name>
-      <Description>IRIS RAG OPR Apps</Description>
+      <Description>IRIS RAG OPR</Description>
       <Version>0.0.1</Version>
       <Packaging>module</Packaging>      
       <SourcesRoot>src</SourcesRoot>
