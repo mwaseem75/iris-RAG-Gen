@@ -72,7 +72,7 @@ FROM SQLUser.rag_documents
 ```
 ![image](https://github.com/user-attachments/assets/6c5c9b02-72aa-4348-9abe-694a3141e344)
 
-The vector data is saved in 'rag_document<id>' (id of the rag_documents)
+The vector data is saved in 'rag_document + id' table. (id of the rag_documents)
 ![image](https://github.com/user-attachments/assets/0ff66ce7-b48e-4b68-a24a-7233710a12e0)
 
 
